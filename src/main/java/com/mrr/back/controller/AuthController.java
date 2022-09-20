@@ -36,7 +36,8 @@ import com.mrr.back.security.services.UserDetailsImpl;
 
 
 //crossOrigin para ser consumido por angular CORS
-@CrossOrigin(origins ="http://localhost:4200/")
+//@CrossOrigin(origins ="http://localhost:4200/")
+@CrossOrigin(origins ="https://portfolio-f603c.web.app/")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -55,7 +56,7 @@ public class AuthController {
   @Autowired
   JwtUtils jwtUtils;
   
-  @CrossOrigin(origins ="http://localhost:4200/")
+  @CrossOrigin(origins ="https://portfolio-f603c.web.app/")
   @PostMapping("/signin")
   public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
