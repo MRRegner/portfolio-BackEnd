@@ -21,6 +21,7 @@ public class Educacion {
     private Long id;
     private String escuela;
     private String titulo;
+    private String logo;
     private String finalizacion;
     private Long persona_id;
     @ManyToOne

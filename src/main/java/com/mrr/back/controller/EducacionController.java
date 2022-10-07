@@ -34,7 +34,7 @@ public class EducacionController {
     @PostMapping ("/educacion/crear")
     public String createEducacion(@RequestBody Educacion edu){
     interEducacion.saveEducacion(edu);
-    return "La educacion fue creado correctamente";
+    return "La educacion fue creada correctamente";
     }
     @DeleteMapping ("/educacion/borrar/{id}")
     public String deleteEducacion (@PathVariable Long id){
@@ -46,6 +46,7 @@ public class EducacionController {
     public Educacion editEducacion (@PathVariable Long id,
                                 @RequestParam ("escuela") String nuevaEscuela,
                                 @RequestParam ("titulo") String nuevoTitulo,
+                                @RequestParam ("logo") String nuevoLogo,
                                 @RequestParam ("finalizacion") String nuevaFinalizacion,
                                 @RequestParam ("persona_id") Long nuevoPersona_id
                                 )
@@ -53,6 +54,7 @@ public class EducacionController {
     Educacion edu = interEducacion.findEducacion(id);
     edu.setEscuela(nuevaEscuela);
     edu.setTitulo(nuevoTitulo);
+    edu.setLogo(nuevoLogo);
     edu.setFinalizacion(nuevaFinalizacion);
     edu.setPersona_id(nuevoPersona_id);
   
