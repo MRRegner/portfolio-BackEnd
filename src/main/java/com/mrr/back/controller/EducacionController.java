@@ -1,4 +1,3 @@
-
 package com.mrr.back.controller;
 
 import com.mrr.back.model.Educacion;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 @CrossOrigin(origins ="https://portfolio-f603c.web.app/")
 @RestController
 public class EducacionController {
