@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-//@CrossOrigin(origins ="https://portfolio-f603c.web.app/")
-@CrossOrigin(origins ="http://localhost:4200/")
+@CrossOrigin(origins ="https://portfolio-f603c.web.app/")
+//@CrossOrigin(origins ="http://localhost:4200/")
 @RestController
 
 public class ProyectoController {
